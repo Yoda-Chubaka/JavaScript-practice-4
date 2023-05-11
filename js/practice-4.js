@@ -291,3 +291,49 @@
 // const getActiveUsers = (users) => users.filter(user => user.isActive);
 
 // Task 26
+// const getInactiveUsers = (users) => users.filter(user => user.isActive !== true);
+
+// Task 27
+// const books = [
+//   {
+//     title: 'The Last Kingdom',
+//     author: 'Bernard Cornwell',
+//     rating: 8.38,
+//   },
+//   {
+//     title: 'Beside Still Waters',
+//     author: 'Robert Sheckley',
+//     rating: 8.51,
+//   },
+//   {
+//     title: 'The Dream of a Ridiculous Man',
+//     author: 'Fyodor Dostoevsky',
+//     rating: 7.75,
+//   },
+//   { title: 'Redder Than Blood', author: 'Tanith Lee', rating: 7.94 },
+// ];
+// const BOOK_TITLE = 'The Dream of a Ridiculous Man';
+// const AUTHOR = 'Robert Sheckley';
+
+// const bookWithTitle = books.find((books) => books.title === BOOK_TITLE);
+// const bookByAuthor = books.find((books) => books.author === AUTHOR);
+
+
+// Task 28
+// const getUserWithEmail = (users, email) => users.find(user => user.email === email);
+
+// Task 29
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+
+// const eachElementInFirstIsEven = firstArray.every((value) => value %2 === 0);
+// const eachElementInFirstIsOdd = firstArray.every((value) => value %2 !== 0);
+
+// const eachElementInSecondIsEven = secondArray.every((value) => value %2 === 0);
+// const eachElementInSecondIsOdd = secondArray.every((value) => value %2 !== 0);
+
+// const eachElementInThirdIsEven = thirdArray.every((value) => value %2 === 0);
+// const eachElementInThirdIsOdd = thirdArray.every((value) => value %2 !== 0);
+
+// Task 30
