@@ -62,14 +62,74 @@
 // console.log(pizzaPalace.order('Vienna', makePizza, onOrderError));
 
 // Task 5
-function calculateTotalPrice(orderedItems) {
-    let totalPrice = 0;
-    // Change code below this line
+// function calculateTotalPrice(orderedItems) {
+//     let totalPrice = 0;
 
-  orderedItems.forEach(function (orderedItem, index, orderedItems){
-totalPrice += orderedItem[index];
+//   orderedItems.forEach(function (orderedItem){
+// totalPrice += orderedItem;
+//   })
 
-        // Change code above this line
-        return totalPrice;
-    })
-}
+//         return totalPrice;
+// }
+
+// Task 6
+// function filterArray(numbers, value) {
+//   const filteredNumbers = [];
+ 
+// numbers.forEach(function(number) {
+//   if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+// })
+ 
+//   return filteredNumbers;
+// }
+
+// Task 7
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+ 
+// firstArray.forEach(element => {
+//      if (secondArray.includes(element)) {
+//         commonElements.push(element);
+//      }
+//    });
+
+//   return commonElements;
+// }
+
+// Task 8
+// const calculateTotalPrice = (quantity, pricePerItem) => {
+  
+//   return quantity * pricePerItem;
+// }
+
+// Task 9
+// const calculateTotalPrice = (quantity, pricePerItem) => quantity * pricePerItem;
+
+// Task 10
+// const calculateTotalPrice = orderedItems => {
+//   let totalPrice = 0;
+
+//   orderedItems.forEach((item) => {
+//     totalPrice += item;
+//   });
+
+//   return totalPrice;
+// }
+
+// Task 11
+// const filterArray = (numbers, value) => {
+//   const filteredNumbers = [];
+
+//   numbers.forEach((number) => {
+//     if (number > value) {
+//       filteredNumbers.push(number);
+//     }
+//   });
+
+//   return filteredNumbers;
+// }
+
+// Task 12
+
