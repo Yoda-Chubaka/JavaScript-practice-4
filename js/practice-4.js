@@ -132,4 +132,32 @@
 // }
 
 // Task 12
+// const getCommonElements = (firstArray, secondArray) => {
+//   const commonElements = [];
 
+//   firstArray.forEach((element) => {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   });
+
+//   return commonElements;
+// }
+
+// Task 13
+// function changeEven(numbers, value) {
+
+//   const newArray = [];
+//   numbers.forEach(element => {
+//     if (element % 2 === 0) {
+//       newArray.push(element + value)
+//     }else newArray.push(element)
+
+//   });
+//   return newArray
+// }
+
+// console.log(changeEven([1, 2, 3, 4, 5], 10))
+// console.log(changeEven([17, 24, 68, 31, 42], 100))
+
+// Task 14
