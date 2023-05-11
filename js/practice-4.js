@@ -337,3 +337,56 @@
 // const eachElementInThirdIsOdd = thirdArray.every((value) => value %2 !== 0);
 
 // Task 30
+// const isEveryUserActive = (users) => users.every(user => user.isActive);
+
+// Task 31
+// const firstArray = [26, 94, 36, 18];
+// const secondArray = [17, 61, 23];
+// const thirdArray = [17, 26, 94, 61, 36, 23, 18];
+
+// const anyElementInFirstIsEven = firstArray.some((value) => value %2 === 0);
+// const anyElementInFirstIsOdd = firstArray.some((value) => value %2 !== 0);
+
+// const anyElementInSecondIsEven = secondArray.some((value) => value %2 === 0);
+// const anyElementInSecondIsOdd = secondArray.some((value) => value %2 !== 0);
+
+// const anyElementInThirdIsEven = thirdArray.some((value) => value %2 === 0);
+// const anyElementInThirdIsOdd = thirdArray.some((value) => value %2 !== 0);
+
+// Task 32
+// const isAnyUserActive = users => users.some(user => user.isActive);
+
+// Task 33
+// const isAnyUserActive = users => users.some(user => user.isActive);
+
+// Task 34
+// const players = {
+//   mango: 1270,
+//   poly: 468,
+//   ajax: 710,
+//   kiwi: 244
+// };
+// const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// // Change code below this line
+
+// const totalPlayTime = players => players.reduce((acc, player) => {
+//   return acc + player.playtimes;
+// });
+
+// // Change code above this line
+// const averagePlayTime = totalPlayTime / playtimes.length;
+
+const players = {
+  mango: 1270,
+  poly: 468,
+  ajax: 710,
+  kiwi: 244
+};
+const playtimes = Object.values(players); // [1270, 468, 710, 244]
+// Change code below this line
+
+const totalPlayTime = players.reduce((totalTime, player) => {
+  return totalTime + player.playtimes;
+}, 0);
+// Change code above this line
+const averagePlayTime = totalPlayTime / playtimes.length;
