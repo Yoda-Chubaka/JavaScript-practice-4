@@ -243,3 +243,51 @@
 //   );
 
 // Task 21
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+
+// const MIN_RATING = 8;
+// const AUTHOR = "Bernard Cornwell";
+
+// const topRatedBooks = books.filter(book => book.rating >= MIN_RATING);
+// const booksByAuthor = books.filter(book => book.author === AUTHOR);
+
+// Task 22
+// const getUsersWithEyeColor = (users, color) => users.filter(user => user.eyeColor === color);
+
+// Task 23
+// const getUsersWithAge = (users, minAge, maxAge) => users.filter(user => user.age > minAge && user.age < maxAge)
+
+
+// Task 24
+// const getFriends = (users) => {
+//   let friends = new Set();
+//   for (const user of users) {
+//     for (const friend of user.friends) {
+//       friends.add(friend);
+//     }
+//   }
+//   return Array.from(friends);
+// }
+
+// Task 25
+// const getActiveUsers = (users) => users.filter(user => user.isActive);
+
+// Task 26
