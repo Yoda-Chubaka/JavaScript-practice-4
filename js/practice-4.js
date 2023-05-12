@@ -366,27 +366,45 @@
 //   ajax: 710,
 //   kiwi: 244
 // };
-// const playtimes = Object.values(players); // [1270, 468, 710, 244]
-// // Change code below this line
+// const playtimes = Object.values(players);
 
-// const totalPlayTime = players => players.reduce((acc, player) => {
-//   return acc + player.playtimes;
-// });
+// const totalPlayTime = playtimes.reduce((totalTime, player) => {
+//   return totalTime + player;
+// }, 0);
 
-// // Change code above this line
 // const averagePlayTime = totalPlayTime / playtimes.length;
 
-const players = {
-  mango: 1270,
-  poly: 468,
-  ajax: 710,
-  kiwi: 244
-};
-const playtimes = Object.values(players); // [1270, 468, 710, 244]
-// Change code below this line
+// Task 35 (потім переробити!!)
+// const players = [
+//   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
+//   { name: "Poly", playtime: 469, gamesPlayed: 2 },
+//   { name: "Ajax", playtime: 690, gamesPlayed: 3 },
+//   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
+// ];
 
-const totalPlayTime = players.reduce((totalTime, player) => {
-  return totalTime + player.playtimes;
-}, 0);
-// Change code above this line
-const averagePlayTime = totalPlayTime / playtimes.length;
+// let totalAveragePlaytimePerGame = players.reduce((total, player) => {
+//   return player.playtime / player.gamesPlayed;
+// }, 0);
+// totalAveragePlaytimePerGame = 1023;
+
+// Task 36
+// const calculateTotalBalance = users => users.reduce((totalBalance, user) => totalBalance + user.balance,0);
+
+// Task 37
+// const getTotalFriendCount = users => users.reduce((totalFriends, user) => totalFriends + user.friends.length,0);
+
+// Task 38
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+// ];
+
+// const ascendingReleaseDates = [...releaseDates].sort();
+
+// const alphabeticalAuthors = [...authors].sort();
+
+// Task 39
+
