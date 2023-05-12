@@ -407,4 +407,104 @@
 // const alphabeticalAuthors = [...authors].sort();
 
 // Task 39
+// const releaseDates = [2016, 1967, 2008, 1984, 1973, 2012, 1997];
 
+// const ascendingReleaseDates = [...releaseDates].sort((a, b) => a - b);
+
+// const descendingReleaseDates = [...releaseDates].sort((a, b) => b - a);
+
+// Task 40
+// const authors = [
+//   "Tanith Lee",
+//   "Bernard Cornwell",
+//   "Robert Sheckley",
+//   "Fyodor Dostoevsky",
+//   "Howard Lovecraft",
+// ];
+
+// const authorsInAlphabetOrder = [...authors].sort((a, b) => a.localeCompare(b));
+
+// const authorsInReversedOrder = [...authors].sort((a, b) => b.localeCompare(a));
+
+// Task 41
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   { title: "Enemy of God", author: "Bernard Cornwell", rating: 8.67 },
+// ];
+
+// const sortedByAuthorName = [...books].sort((a,b) => a.author.localeCompare(b.author));
+
+// const sortedByReversedAuthorName = [...books].sort((a,b) => b.author.localeCompare(a.author));
+
+// const sortedByAscendingRating = [...books].sort((a,b) => a.rating - b.rating);
+
+// const sortedByDescentingRating = [...books].sort((a,b) => b.rating - a.rating);
+
+// Task 42
+// const sortByAscendingBalance = users => [...users].sort((a, b) => a.balance - b.balance);
+
+// Task 43
+// const sortByDescendingFriendCount = users => [...users].sort((a, b) => b.friends.length - a.friends.length);
+
+// Task 44
+// const sortByName = users => [...users].sort((a,b) => a.name.localeCompare(b.name));
+
+// Task 45 (переробити!)
+// const books = [
+//   {
+//     title: "The Last Kingdom",
+//     author: "Bernard Cornwell",
+//     rating: 8.38,
+//   },
+//   {
+//     title: "Beside Still Waters",
+//     author: "Robert Sheckley",
+//     rating: 8.51,
+//   },
+//   {
+//     title: "The Dream of a Ridiculous Man",
+//     author: "Fyodor Dostoevsky",
+//     rating: 7.75,
+//   },
+//   { title: "Redder Than Blood", author: "Tanith Lee", rating: 7.94 },
+//   {
+//     title: "The Dreams in the Witch House",
+//     author: "Howard Lovecraft",
+//     rating: 8.67,
+//   },
+// ];
+// const MIN_BOOK_RATING = 8;
+
+// let names = books.filter((elem, index, array) => array.indexOf(elem) === index).sort((a,b) => a.author.localeCompare(b.author)).map(books => books.author);
+
+// names = ['Bernard Cornwell', 'Howard Lovecraft', 'Robert Sheckley']
+
+
+// Task 46
+// const getNamesSortedByFriendCount = users => [...users].sort((a, b) => a.friends.length - b.friends.length).map(user => user.name);
+
+// Task 47
+// const getSortedFriends = users => {
+//   return [...users].filter(user => user.friends).map(user => user.friends).flatMap(user => user).filter((user, index, array) => array.indexOf(user) === index).sort((a,b) => a.localeCompare(b))
+// };
+
+// Task 48
+// const getTotalBalanceByGender = (users, gender) => {
+// return [...users].filter(user => user.gender === gender).reduce((totalBalance, user) => {
+//   return totalBalance += user.balance}, 0)
+// };
