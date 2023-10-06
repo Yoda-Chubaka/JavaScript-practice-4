@@ -98,6 +98,19 @@
 //   return commonElements;
 // }
 
+
+
+// function getCommonElements(firstArray, secondArray) {
+//   const commonElements = [];
+
+//   firstArray.forEach(function (element) {
+//     if (secondArray.includes(element)) {
+//       commonElements.push(element);
+//     }
+//   })
+//   return commonElements;
+// }
+
 // Task 8
 // const calculateTotalPrice = (quantity, pricePerItem) => {
   
@@ -275,7 +288,6 @@
 // Task 23
 // const getUsersWithAge = (users, minAge, maxAge) => users.filter(user => user.age > minAge && user.age < maxAge)
 
-
 // Task 24
 // const getFriends = (users) => {
 //   let friends = new Set();
@@ -286,6 +298,13 @@
 //   }
 //   return Array.from(friends);
 // }
+
+
+
+// const getUsersWithFriend = (users, friendName) => {
+//     return users.filter(({ friends }) => friends.includes(friendName));
+// }
+
 
 // Task 25
 // const getActiveUsers = (users) => users.filter(user => user.isActive);
