@@ -307,12 +307,25 @@
 
 
 // Task 25
-// const getActiveUsers = (users) => users.filter(user => user.isActive);
+// const getFriends = (users) => {
+//     let friends = new Set();
+//     for(const user of users) {
+//         for(const friend of user.friends) {
+//             friends.add(friend);
+//         }
+//     }
+//     return Array.from(friends);
+// }
 
 // Task 26
-// const getInactiveUsers = (users) => users.filter(user => user.isActive !== true);
+// const getActiveUsers = (users) => {
+//     return users.filter(user => user.isActive === true);
+// }
 
 // Task 27
+// const getInactiveUsers = (users) => users.filter(user => user.isActive !== true);
+
+// Task 28
 // const books = [
 //   {
 //     title: 'The Last Kingdom',
@@ -338,10 +351,10 @@
 // const bookByAuthor = books.find((books) => books.author === AUTHOR);
 
 
-// Task 28
+// Task 29
 // const getUserWithEmail = (users, email) => users.find(user => user.email === email);
 
-// Task 29
+// Task 30
 // const firstArray = [26, 94, 36, 18];
 // const secondArray = [17, 61, 23];
 // const thirdArray = [17, 26, 94, 61, 36, 23, 18];
@@ -355,10 +368,10 @@
 // const eachElementInThirdIsEven = thirdArray.every((value) => value %2 === 0);
 // const eachElementInThirdIsOdd = thirdArray.every((value) => value %2 !== 0);
 
-// Task 30
+// Task 31
 // const isEveryUserActive = (users) => users.every(user => user.isActive);
 
-// Task 31
+// Task 32
 // const firstArray = [26, 94, 36, 18];
 // const secondArray = [17, 61, 23];
 // const thirdArray = [17, 26, 94, 61, 36, 23, 18];
@@ -371,9 +384,6 @@
 
 // const anyElementInThirdIsEven = thirdArray.some((value) => value %2 === 0);
 // const anyElementInThirdIsOdd = thirdArray.some((value) => value %2 !== 0);
-
-// Task 32
-// const isAnyUserActive = users => users.some(user => user.isActive);
 
 // Task 33
 // const isAnyUserActive = users => users.some(user => user.isActive);
@@ -393,7 +403,7 @@
 
 // const averagePlayTime = totalPlayTime / playtimes.length;
 
-// Task 35 (потім переробити!!)
+// Task 35
 // const players = [
 //   { name: "Mango", playtime: 1270, gamesPlayed: 4 },
 //   { name: "Poly", playtime: 469, gamesPlayed: 2 },
@@ -401,10 +411,8 @@
 //   { name: "Kiwi", playtime: 241, gamesPlayed: 1 },
 // ];
 
-// let totalAveragePlaytimePerGame = players.reduce((total, player) => {
-//   return player.playtime / player.gamesPlayed;
-// }, 0);
-// totalAveragePlaytimePerGame = 1023;
+// const totalAveragePlaytimePerGame = players.reduce((acc, player) => acc += player.playtime / player.gamesPlayed, 0);
+
 
 // Task 36
 // const calculateTotalBalance = users => users.reduce((totalBalance, user) => totalBalance + user.balance,0);
@@ -483,7 +491,7 @@
 // Task 44
 // const sortByName = users => [...users].sort((a,b) => a.name.localeCompare(b.name));
 
-// Task 45 (переробити!)
+// Task 45
 // const books = [
 //   {
 //     title: "The Last Kingdom",
@@ -509,10 +517,7 @@
 // ];
 // const MIN_BOOK_RATING = 8;
 
-// let names = books.filter((elem, index, array) => array.indexOf(elem) === index).sort((a,b) => a.author.localeCompare(b.author)).map(books => books.author);
-
-// names = ['Bernard Cornwell', 'Howard Lovecraft', 'Robert Sheckley']
-
+// const names = books.filter(book => book.rating > MIN_BOOK_RATING).map(rating => rating.author).sort((a, b) => a.localeCompare(b));
 
 // Task 46
 // const getNamesSortedByFriendCount = users => [...users].sort((a, b) => a.friends.length - b.friends.length).map(user => user.name);
